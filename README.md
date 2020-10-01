@@ -89,6 +89,22 @@ plt.show()
   
 ```
 
+### Morphological operations( Erosion and Dilation)
+
+```python
+  
+  # The first parameter is the original image, 
+  # kernel is the matrix with which image is  
+  # convolved and third parameter is the number  
+  # of iterations, which will determine how much  
+  # you want to erode/dilate a given image.  
+  img_erosion = cv2.erode(img, kernel, iterations=1) 
+  img_dilation = cv2.dilate(img, kernel, iterations=1) 
+  
+```
+
+
+
 ### Median Blur Filter
 ```python
   img = cv2.medianBlur(img,5)
